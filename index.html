@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Constructora Trodon</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Construtora Trodon</p>
+            <nav>
+                <a href="#nuestros-programas">Inicio</a>
+                <a href="#somos-proya">Somos Trodon</a>
+                <a href="#caracteristicas">ubicanos</a>
+            </nav>
+        </div>
+    </header>
+    <section id="nuestros-programas">
+        <div class="container">
+            <h2>Te Ofrecemos </h2>
+            <div class="programas">
+                <div class="carta">
+                    <h3>Calidad</h3>
+                    <p>En el sector de la construcción, usualmente se asocia el tema de la Calidad a los Materiales, Elementos Componentes, Sistemas y a la Ejecución de las Obras, sin considerar las previsiones para asegurar la “Calidad en el Diseño”</p>
+                    
+                </div>
+                <div class="carta">
+                    <h3>Confianza</h3>
+                    <p>Desde siempre ha buscado el confort en su hogar. Actualmente la calidad de las construcciones nos ha llevado a no poder disponer de ese confort tan deseado, ya sea por frío, calor, humedad,… y en el caso de conseguirlo con un coste energético .</p>
+                    
+                </div>
+               >  
+            </div>
+        </div>
+    </section>
+</head>
+<body>
+	<form action="" name="convertidor">
+		<p>Dolares:</p>
+		<input type="text" class="field" name="bs"> <br/>
+
+		<p>Bolivianos:</p>
+		<input type="text" class="field" name="dolar"> <br/>
+
+		<p>Asunto:</p>
+		<input type="text" class="field"> <br/>
+
+		<p>Mensaje:</p>
+		<textarea class="field"></textarea> <br/>
+
+		<p class="center-content">
+			<input type="button" class="btn btn-green" value="Aceptar" onclick="calcular();">
+		</p>
+
+	</form>
+    <script type="text/javascript">
+        function calcular(){
+            var pes = (document.convertidor.bs.value)*1;
+
+            if (pes == 0){alert("no ha llenado el espacio de pesos ingrese un numero porfavor")}else{
+            var tot = pes*6.98;
+            tot = tot.toFixed(2);
+            document.convertidor.dolar.value=tot;
+            }
+        }
+
+    </script>
+</body>
+    <section id="somos-proya">
+        <div class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+
+                <h2>SOMOS <span class="color-acento">TRODON</span></h2>
+                <p>Transformamos la construcción en la mejor experiencia,
+                    impulsados por la pasión por construir.
+                    
+                    Construimos hoteles, industrias, centro comerciales, oficinas y viviendas desde 2010.
+                    
+                    Somos receptivos a las necesidades de nuestros clientes
+                    y nos convertimos en sus aliados.
+                    
+                    Creamos la mejor experiencia para nuestros clientes
+                    al trabajar con estrategia, método, disciplina, rigor, pasión y entrega.
+                    
+                    Creemos en la construcción inteligente donde:
+                    el orden y la estructura son la base de la eficiencia,
+                    la sostenibilidad es nuestra responsabilidad,
+                    y la innovación es el modelo para crecer.
+                    
+                    Utilizamos herramientas de última tecnología para 
+                    comunicación, control de costos y programación de proyectos.
+                    
+                    La gente es la esencia de lo que hacemos,
+                    con ellos y para ellos trabajamos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="caracteristicas">
+        <div class="container">
+            <ul>
+                <li> CONTACTOS</li>
+                <li>✔️ 75273304-75289832</li>
+                <li> UBICACION</li>
+                <li>✔️ Zona Villa Dolores Calle 5 de agosto </li>
+                <li>frente a la iglesia Adventista </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="final">
+        <h2>Ven y Forma parte </h2>
+        <button>Contactos</button>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Buscanos 75273304</p>
+        </div>
+    </footer>
+</body>
+</html>
